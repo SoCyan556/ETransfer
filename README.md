@@ -2,8 +2,6 @@
 
 ETransfer is a Blender add-on for moving body shape keys onto fitted clothing. It matches clothing vertices to the nearest point on the body's undeformed surface, then transfers the body's displacement to the clothing.
 
-It also includes a small squish-shape generator for making soft compression areas from a selected patch of mesh.
-
 ## Requirements
 
 - Blender 4.1 or newer
@@ -30,16 +28,6 @@ ETransfer uses only Blender's built-in Python modules. No external Python packag
 5. Adjust **Strength** if necessary, then run the transfer.
 
 Existing shape-key names on the target are skipped in batch mode. ETransfer does not overwrite them.
-
-## Squish generator
-
-1. Select the body mesh and enter Edit Mode.
-2. Select a narrow band or patch where the compression should begin.
-3. Return to Object Mode.
-4. Set the depth, softness width, and pudge amount.
-5. Click **Create Squish Shape Key**.
-
-The generated key is left at a value of `1.0` for inspection. Undo, adjust the settings, and regenerate if needed.
 
 ## Important notes
 
